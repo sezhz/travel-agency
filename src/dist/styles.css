@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100%;
+}
+
+.hero {
+  height: 900px;
+  margin: 0 40px;
+  position: relative;
+  overflow: hidden;
+}
+.hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(40, 58, 94, 0.5);
+  z-index: 1;
+}
+.hero .hero-overlay .container {
+  height: 100%;
+  display: table;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero .hero-overlay .container .row {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 900px;
+}
+.hero .hero-overlay .container .row .col {
+  z-index: 99;
+  position: relative;
+}
+.hero .hero-overlay .container .row .col .title {
+  overflow: hidden;
+  color: #F5D7DB;
+  font-size: 50px;
+}
+.hero .hero-overlay .container .row .col .title.fade-out {
+  animation: fadeOutLeft 1.5s both;
+}
+.hero .hero-overlay .container .row .col .title.fade-in {
+  animation: fadeInLeft 2s both;
+}
+.hero .hero-overlay .container .row .col .subtitle {
+  overflow: hidden;
+  color: #F5D7DB;
+  font-size: 18px;
+}
+.hero .hero-overlay .container .row .col .subtitle.fade-out {
+  animation: fadeOutLeft 1.5s both;
+}
+.hero .hero-overlay .container .row .col .subtitle.fade-in {
+  animation: fadeInLeft 2.4s both;
+}
+.hero .hero-overlay .container .row .col .btns {
+  overflow: hidden;
+  margin-top: 25px;
+}
+.hero .hero-overlay .container .row .col .btns.fade-out {
+  animation: fadeOutLeft 1.5s both;
+}
+.hero .hero-overlay .container .row .col .btns.fade-in {
+  animation: fadeInLeft 3.3s both;
+}
+.hero .hero-overlay .container .row .col .btns .theme-btn {
+  color: #BD83B8;
+  font-weight: 600;
+  padding: 15px 27px;
+  border: 0;
+  text-transform: capitalize;
+  display: block;
+  background: #F5D7DB;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid rgba(71, 62, 102, 0.3);
+  border-radius: 8px;
+}
+.hero .hero-overlay .container .row .col .btns .theme-btn:hover {
+  background: #BD83B8;
+  color: #F5D7DB;
+  animation: changeColor 1s ease-in-out;
+}
+@keyframes changeColor {
+  0% {
+    background: #F5D7DB;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background: #F1916D;
+  }
+  100% {
+    background: #BD83B8;
+  }
+}
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,139 @@
+@use "../global/boilerplate" as *;
+@use "../global/colors" as *;
+@use "../global/typography" as *;
+
+.hero {
+  height: 900px;
+  margin: 0 40px;
+  position: relative;
+  overflow: hidden;
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(40, 58, 94, 0.5);
+    z-index: 1;
+
+    .container {
+      height: 100%;
+      display: table;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      .row {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        width: 900px;
+
+        .col {
+          z-index: 99;
+          position: relative;
+
+          .title {
+            overflow: hidden;
+            color: $peach;
+            font-size: $h2-size;
+
+            &.fade-out {
+              animation: fadeOutLeft 1.5s both;
+            }
+
+            &.fade-in {
+              animation: fadeInLeft 2s both;
+            }
+          }
+
+          .subtitle {
+            overflow: hidden;
+            color: $peach;
+            font-size: $p-size;
+
+            &.fade-out {
+              animation: fadeOutLeft 1.5s both;
+            }
+
+            &.fade-in {
+              animation: fadeInLeft 2.4s both;
+            }
+          }
+
+          .btns {
+            overflow: hidden;
+            margin-top: 25px;
+
+            &.fade-out {
+              animation: fadeOutLeft 1.5s both;
+            }
+
+            &.fade-in {
+              animation: fadeInLeft 3.3s both;
+            }
+
+            .theme-btn {
+              color: $pink;
+              font-weight: 600;
+              padding: 15px 27px;
+              border: 0;
+              text-transform: capitalize;
+              display: block;
+              background: $peach;
+              display: inline-block;
+              position: relative;
+              overflow: hidden;
+              text-decoration: none;
+              border: 1px solid rgba(71, 62, 102, 0.3);
+              border-radius: 8px;
+
+              &:hover {
+                background: $pink;
+                color: $peach;
+                animation: changeColor 1s ease-in-out;
+              }
+            }
+
+            @keyframes changeColor {
+              0% {
+                background: $peach;
+                color: rgba(0, 0, 0, 0.5);
+              }
+              50% {
+                background: $orange;
+              }
+              100% {
+                background: $pink;
+              }
+            }
+          }
+
+          @keyframes fadeOutLeft {
+            0% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+            100% {
+              opacity: 0;
+              transform: translateX(-100%);
+            }
+          }
+
+          @keyframes fadeInLeft {
+            0% {
+              opacity: 0;
+              transform: translateX(-100%);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@use "./colors" as *;
+@use "./typography" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100%;
+}
