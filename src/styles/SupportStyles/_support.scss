@@ -1,0 +1,66 @@
+@use "../global/boilerplate" as *;
+@use "../global/colors" as *;
+@use "../global/typography" as *;
+
+.support {
+  background-image: url("../support\ background.jpg");
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 150px 0;
+  opacity: 0.9;
+
+  .support-content {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .support-text {
+      text-align: center;
+      font-size: 40px;
+      color: $peach;
+      margin-bottom: 50px;
+    }
+
+    .support-button {
+      color: $pink;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 15px 27px;
+      border: 0;
+      text-transform: capitalize;
+      display: block;
+      background: white;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      border: 1px solid rgba(71, 62, 102, 0.3);
+
+      cursor: pointer;
+
+      &:hover {
+        background: $pink;
+        color: white;
+        animation: changeColor 1s ease-in-out;
+      }
+      @keyframes changeColor {
+        0% {
+          background: $peach;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        50% {
+          background: $orange;
+        }
+        100% {
+          background: $pink;
+        }
+      }
+    }
+  }
+}

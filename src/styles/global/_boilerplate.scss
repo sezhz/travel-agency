@@ -35,4 +35,12 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (max-width: 590px) {
+    margin-left: 0;
+  }
+
+  @media (max-width: 760px) {
+    margin-left: 20px;
+  }
 }

@@ -3,6 +3,9 @@
 @use "../global/typography" as *;
 
 .tour-select {
+  @media (max-width: 760px) {
+    display: none;
+  }
   .container {
     .tour-select-wrap {
       display: flex;
