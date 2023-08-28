@@ -32,7 +32,7 @@ const textData = [
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isTransparent, setIsTransparent] = useState(true);
+  const [isTransparent, setIsTransparent] = useState(false);
   const { title, subtitle } = textData[currentImageIndex];
   const [fadeOut, setFadeOut] = useState(false);
   const [fadeIn, setFadeIn] = useState(false);
