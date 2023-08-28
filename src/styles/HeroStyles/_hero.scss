@@ -20,10 +20,6 @@
     .container {
       height: 100%;
       display: table;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
 
       .row {
         position: relative;
@@ -37,7 +33,7 @@
 
           .title {
             overflow: hidden;
-            color: $peach;
+            color: white;
             font-size: $h2-size;
 
             &.fade-out {
@@ -51,7 +47,7 @@
 
           .subtitle {
             overflow: hidden;
-            color: $peach;
+            color: white;
             font-size: $p-size;
 
             &.fade-out {
@@ -82,7 +78,7 @@
               border: 0;
               text-transform: capitalize;
               display: block;
-              background: $peach;
+              background: white;
               display: inline-block;
               position: relative;
               overflow: hidden;
@@ -92,7 +88,7 @@
 
               &:hover {
                 background: $pink;
-                color: $peach;
+                color: white;
                 animation: changeColor 1s ease-in-out;
               }
             }
