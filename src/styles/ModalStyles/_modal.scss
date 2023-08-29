@@ -21,6 +21,11 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     position: relative;
 
+    @media (max-width: 768px) {
+      width: 1000px;
+      height: 1200px;
+    }
+
     .modal-header {
       padding: 15px;
 
@@ -36,11 +41,19 @@
         .fas {
           font-size: 30px;
           color: $blue-dark;
+
+          @media (max-width: 768px) {
+            font-size: $h2-size;
+          }
         }
       }
 
       .modal-title {
         color: $blue-dark;
+
+        @media (max-width: 768px) {
+          font-size: $h2-size;
+        }
       }
     }
 
@@ -49,12 +62,28 @@
       padding: 15px;
       border-top: 2px solid rgba($blue-dark, 0.5);
 
+      @media (max-width: 768px) {
+        height: 90%;
+      }
+
       .contact-form {
+        @media (max-width: 760px) {
+          height: 85%;
+        }
+
         .form-container {
           margin: 15px 25px;
 
+          @media (max-width: 768px) {
+            margin: 50px 25px;
+          }
+
           textarea {
             height: 100px !important;
+            
+            @media (max-width: 768px) {
+              height: 200px !important;
+            }
           }
 
           .support-form {
@@ -67,6 +96,11 @@
             border: 1px solid #ccc;
             border-radius: 6px;
             transition: box-shadow 0.3s ease;
+
+            @media (max-width: 768px) {
+              height: 100px;
+              font-size: $h2-size;
+            }
 
             &:focus {
               box-shadow: 0 0 10px $pink;
@@ -103,6 +137,12 @@
               color: white;
               animation: changeColor 1s ease-in-out;
             }
+
+            @media (max-width: 768px) {
+              margin-top: 50px;
+              font-size: $h2-size;
+            }
+
             @keyframes changeColor {
               0% {
                 background: $peach;
@@ -127,9 +167,21 @@
         margin: 60px;
         gap: 60px;
 
+        @media (max-width: 768px) {
+          gap: 200px;
+        }
+
         a {
           .fa-brands {
             font-size: 50px;
+            
+            &:hover {
+              color: $blue-dark;
+            }
+
+            @media (max-width: 768px) {
+              font-size: 70px;
+            }
           }
         }
       }

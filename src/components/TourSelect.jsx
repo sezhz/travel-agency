@@ -48,6 +48,18 @@ const TourSelect = () => {
                 <option value="Турція" className="custom-option">
                   Турція
                 </option>
+                <option value="Греція" className="custom-option">
+                  Греція
+                </option>
+                <option value="Iндонезiя" className="custom-option">
+                  Iндонезiя
+                </option>
+                <option value="Японiя" className="custom-option">
+                  Японiя
+                </option>
+                <option value="Україна" className="custom-option">
+                  Україна
+                </option>
               </select>
 
               <select
