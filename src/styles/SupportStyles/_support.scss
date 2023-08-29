@@ -12,6 +12,21 @@
   padding: 150px 0;
   opacity: 0.9;
 
+  @media (max-width: 530px) {
+    padding: 65px 0;
+  }
+
+  @media (max-width: 760px) {
+    padding: 90px 0;
+  }
+
+  @media (max-width: 990px) {
+    padding: 100px 0;
+    margin-top: 1450px;
+    width: 1210px;
+    height: 500px;
+  }
+
   .support-content {
     margin-right: -15px;
     margin-left: -15px;
@@ -25,6 +40,10 @@
       font-size: 40px;
       color: $peach;
       margin-bottom: 50px;
+
+      @media (max-width: 760px) {
+        font-size: 80px;
+      }
     }
 
     .support-button {
@@ -41,8 +60,11 @@
       overflow: hidden;
       text-decoration: none;
       border: 1px solid rgba(71, 62, 102, 0.3);
-
       cursor: pointer;
+
+      @media (max-width: 760px) {
+        font-size: 45px;
+      }
 
       &:hover {
         background: $pink;

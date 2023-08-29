@@ -28,6 +28,10 @@ body {
   align-items: stretch;
   align-content: stretch;
   height: 100%;
+
+  @media (max-width: 760px) {
+    font-size: 14px;
+  }
 }
 
 .container {
@@ -38,9 +42,11 @@ body {
 
   @media (max-width: 590px) {
     margin-left: 0;
+    width: 100%;
   }
 
   @media (max-width: 760px) {
     margin-left: 20px;
+    width: 100%;
   }
 }
