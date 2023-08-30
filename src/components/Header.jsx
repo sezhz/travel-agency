@@ -32,12 +32,13 @@ const Header = () => {
           <img src={wordMap} alt="map" />
           <div className="map-text">
             <h2>Exotic Skyline</h2>
-            <p>туристичне агенство</p>
+            <p>туристична агенцiя</p>
           </div>
           <div className="navigation">
             <a href="#tour-select">Вибiр туру</a>
             <a href="#popular">Популярнi</a>
             <a href="#support">Пiдтримка</a>
+            <a href="#about">Про нас</a>
           </div>
           <div className="icons">
             <i class="fa-solid fa-envelope" onClick={openModal}></i>

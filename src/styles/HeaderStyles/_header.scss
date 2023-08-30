@@ -49,12 +49,12 @@
     }
 
     .icons {
-      margin-left: 24%;
+      margin-left: 15%;
       display: flex;
       flex-direction: row;
 
       @media (max-width: 768px) {
-        margin-left: 5%;
+        display: none;
       }
 
       i {
@@ -108,12 +108,21 @@
       right: 80px;
       width: 400px;
       animation: expand 1s ease-in-out;
+
+      @media (max-width: 768px) {
+        right: -820px;
+        width: auto;
+      }
     }
 
     .phones-title {
       padding-bottom: 8px;
       border-bottom: 1px solid #efefef;
       color: $blue-dark;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
     }
 
     .phones-content {
@@ -129,6 +138,10 @@
         border-bottom: 1px solid #efefef;
         padding: 10px 0;
         white-space: nowrap;
+
+        @media (max-width: 768px) {
+          font-size: 50px;
+        }
       }
     }
   }

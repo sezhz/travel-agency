@@ -4,6 +4,7 @@ import TourSelect from "./components/TourSelect";
 import Popular from "./components/Popular";
 import Support from "./components/Support";
 import Header from "./components/Header";
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TourSelect />
       <Popular />
       <Support />
+      <About />
     </div>
   );
 }
