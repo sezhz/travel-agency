@@ -999,6 +999,7 @@ body {
     margin: 0;
     position: relative;
     left: 260px;
+    width: 800px;
   }
 }
 .about .about-container .img-container {
@@ -1052,7 +1053,12 @@ body {
     flex-direction: row;
   }
 }
-.about .about-container .info-container .about-text-side .about-text span {
+@media (max-width: 768px) {
+  .about .about-container .info-container .about-text-side .about-text div {
+    width: 800px;
+  }
+}
+.about .about-container .info-container .about-text-side .about-text div span {
   display: block;
   vertical-align: inherit;
   margin-bottom: 20px;
@@ -1062,7 +1068,7 @@ body {
   color: #473E66;
 }
 @media (max-width: 768px) {
-  .about .about-container .info-container .about-text-side .about-text span {
+  .about .about-container .info-container .about-text-side .about-text div span {
     text-align: start;
     font-size: 50px;
     margin-bottom: 90px;

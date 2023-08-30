@@ -19,6 +19,7 @@
       margin: 0;
       position: relative;
       left: 260px;
+      width: 800px;
     }
 
     .img-container {
@@ -74,22 +75,28 @@
             flex-direction: row;
           }
 
-          span {
-            display: block;
-            vertical-align: inherit;
-            margin-bottom: 20px;
-            font-family: $text-font;
-            font-size: $span-size;
-            letter-spacing: 2px;
-            color: $blue-light;
-
+          div {
             @media (max-width: 768px) {
-              text-align: start;
-              font-size: 50px;
-              margin-bottom: 90px;
-              width: 1170px;
-              position: relative;
-              left: -380px;
+              width: 800px;
+            }
+
+            span {
+              display: block;
+              vertical-align: inherit;
+              margin-bottom: 20px;
+              font-family: $text-font;
+              font-size: $span-size;
+              letter-spacing: 2px;
+              color: $blue-light;
+
+              @media (max-width: 768px) {
+                text-align: start;
+                font-size: 50px;
+                margin-bottom: 90px;
+                width: 1170px;
+                position: relative;
+                left: -380px;
+              }
             }
           }
         }
