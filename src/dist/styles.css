@@ -815,4 +815,151 @@ body {
   .modal-overlay .modal .modal-body .social-medias a .fa-brands {
     font-size: 70px;
   }
+}
+
+.header {
+  position: relative;
+  padding: 0 100px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+}
+.header .map-container {
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .map-container img {
+  max-height: 100%;
+  width: auto;
+  margin-right: 30px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.header .map-container .map-text {
+  text-align: center;
+}
+.header .map-container .map-text h2 {
+  font-size: 40px;
+  font-family: "Kalam", cursive;
+  color: #06142E;
+  white-space: nowrap;
+}
+.header .map-container .map-text p {
+  font-family: "Kalam", cursive;
+  font-weight: 100;
+  font-size: 16px;
+}
+.header .map-container .icons {
+  margin-left: 24%;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .header .map-container .icons {
+    margin-left: 5%;
+  }
+}
+.header .map-container .icons i {
+  position: relative;
+  font-size: 33px;
+  color: black;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.header .map-container .icons i:hover {
+  color: #1B3358;
+}
+.header .map-container .navigation {
+  margin-left: 18%;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: 60px;
+}
+.header .map-container .navigation a {
+  text-decoration: none;
+  color: #06142E;
+  font-weight: 100;
+}
+@media (max-width: 768px) {
+  .header .map-container .navigation a {
+    font-size: 25px;
+  }
+}
+.header .map-container .navigation a:hover {
+  color: #473E66;
+}
+.header .phones-container {
+  border-top: 2px solid #1B3358;
+  display: none;
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 0;
+  overflow: hidden;
+}
+.header .phones-container.visible {
+  display: block;
+  position: absolute;
+  top: 90px;
+  right: 80px;
+  width: 400px;
+  animation: expand 1s ease-in-out;
+}
+.header .phones-container .phones-title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #efefef;
+  color: #06142E;
+}
+.header .phones-container .phones-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .phones-container .phones-content h2 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #06142E;
+  font-weight: 100;
+  border-bottom: 1px solid #efefef;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+.header .scroll-to-top-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #06142e;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.2;
+  transition: opacity 0.5s ease-in-out;
+}
+.header .scroll-to-top-button:hover {
+  opacity: 1;
+}
+
+@keyframes expand {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 400px;
+  }
 }/*# sourceMappingURL=styles.css.map */

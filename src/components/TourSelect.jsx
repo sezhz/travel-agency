@@ -14,7 +14,7 @@ const TourSelect = () => {
     <div className="tour-select">
       <div className="container">
         <div className="tour-select-wrap">
-          <div className="tour-select-content">
+          <div id="tour-select" className="tour-select-content">
             <div className="tour-title">
               <p>Пошук туру</p>
             </div>

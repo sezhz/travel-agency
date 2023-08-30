@@ -1,0 +1,165 @@
+@use "../global/boilerplate" as *;
+@use "../global/colors" as *;
+@use "../global/typography" as *;
+
+.header {
+  position: relative;
+  padding: 0 100px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
+  .map-container {
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      max-height: 100%;
+      width: auto;
+      margin-right: 30px;
+      padding: 5px;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+    .map-text {
+      text-align: center;
+
+      h2 {
+        font-size: 40px;
+        font-family: "Kalam", cursive;
+        color: $blue-dark;
+        white-space: nowrap;
+      }
+
+      p {
+        font-family: "Kalam", cursive;
+        font-weight: 100;
+        font-size: 16px;
+      }
+    }
+
+    .icons {
+      margin-left: 24%;
+      display: flex;
+      flex-direction: row;
+
+      @media (max-width: 768px) {
+        margin-left: 5%;
+      }
+
+      i {
+        position: relative;
+        font-size: 33px;
+        color: black;
+        cursor: pointer;
+        margin-left: 30px;
+
+        &:hover {
+          color: $blue-medium;
+        }
+      }
+    }
+
+    .navigation {
+      margin-left: 18%;
+      display: flex;
+      flex-direction: row;
+      white-space: nowrap;
+      gap: 60px;
+
+      a {
+        text-decoration: none;
+        color: $blue-dark;
+        font-weight: 100;
+
+        @media (max-width: 768px) {
+          font-size: 25px;
+        }
+
+        &:hover {
+          color: $blue-light;
+        }
+      }
+    }
+  }
+
+  .phones-container {
+    border-top: 2px solid $blue-medium;
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 0;
+    overflow: hidden;
+
+    &.visible {
+      display: block;
+      position: absolute;
+      top: 90px;
+      right: 80px;
+      width: 400px;
+      animation: expand 1s ease-in-out;
+    }
+
+    .phones-title {
+      padding-bottom: 8px;
+      border-bottom: 1px solid #efefef;
+      color: $blue-dark;
+    }
+
+    .phones-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h2 {
+        font-size: 20px;
+        font-family: $text-font;
+        color: $blue-dark;
+        font-weight: 100;
+        border-bottom: 1px solid #efefef;
+        padding: 10px 0;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #06142e;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.5s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes expand {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 400px;
+  }
+}

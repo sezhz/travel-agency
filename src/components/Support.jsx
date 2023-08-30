@@ -13,7 +13,7 @@ const Support = () => {
   };
 
   return (
-    <div className="support">
+    <div id="support" className="support">
       <div className="container">
         <div className="support-content">
           <h2 className="support-text">Отримати консультацiю</h2>

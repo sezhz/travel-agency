@@ -106,6 +106,7 @@ const Hero = () => {
     <>
       <PreloadImages images={images} />
       <div
+        id="hero"
         className="hero"
         style={backgroundImageStyle}
         onMouseEnter={() => setIsHovered(true)}
