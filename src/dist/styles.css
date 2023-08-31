@@ -298,6 +298,13 @@ body {
   padding-right: 140px;
   padding-top: 20px;
   border-bottom-right-radius: 50px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+.tour-select .container .tour-select-wrap .tour-select-content:hover {
+  opacity: 1;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.6);
 }
 .tour-select .container .tour-select-wrap .tour-select-content .tour-title {
   font-size: 25px;
@@ -838,6 +845,14 @@ body {
   flex-direction: row;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .header .map-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -34px;
+  }
+}
 .header .map-container img {
   max-height: 100%;
   width: auto;
@@ -861,7 +876,7 @@ body {
   font-size: 16px;
 }
 .header .map-container .icons {
-  margin-left: 15%;
+  margin-left: 6%;
   display: flex;
   flex-direction: row;
 }
@@ -1015,6 +1030,7 @@ body {
 }
 .about .about-container .img-container img {
   width: 100%;
+  margin-left: 40px;
 }
 .about .about-container .info-container {
   width: 45%;
@@ -1023,7 +1039,7 @@ body {
   padding-left: 15px;
 }
 .about .about-container .info-container .about-text-side {
-  padding-left: 80px;
+  padding-left: 120px;
 }
 .about .about-container .info-container .about-text-side .about-title {
   text-align: left;
@@ -1036,7 +1052,7 @@ body {
   .about .about-container .info-container .about-text-side .about-title h2 {
     font-size: 120px;
     white-space: nowrap;
-    left: -120px;
+    left: -160px;
     position: relative;
   }
 }
@@ -1070,9 +1086,9 @@ body {
 @media (max-width: 768px) {
   .about .about-container .info-container .about-text-side .about-text div span {
     text-align: start;
-    font-size: 50px;
+    font-size: 44px;
     margin-bottom: 90px;
-    width: 1170px;
+    width: 1100px;
     position: relative;
     left: -380px;
   }
@@ -1087,4 +1103,102 @@ body {
 .about .video-container iframe {
   width: 1280px;
   height: 720px;
+}
+
+.reviews {
+  background: #f7fbff;
+  padding-bottom: 85px;
+  padding: 110px 0;
+}
+@media (max-width: 768px) {
+  .reviews {
+    display: none;
+  }
+}
+.reviews .container {
+  width: 1170px;
+}
+.reviews .container .reviews-header .reviews-title {
+  margin-bottom: 35px;
+}
+.reviews .container .reviews-header .reviews-title span {
+  color: #F1916D;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 10px;
+}
+.reviews .container .reviews-header .reviews-title h2 {
+  font-size: 50px;
+  color: #1B3358;
+}
+.reviews .carousel-container {
+  width: 1200px;
+  overflow: hidden;
+}
+.reviews .carousel-container .carousel-track {
+  display: flex;
+  animation: carousel-animation 40s infinite steps(1);
+  align-items: flex-start;
+}
+.reviews .carousel-container .carousel-track .carousel-item {
+  border-right: 1px solid rgb(0, 255, 255);
+  width: 400px;
+  height: auto;
+  flex-shrink: 0;
+  padding: 30px;
+  border-bottom: 2px solid #06142E;
+}
+.reviews .carousel-container .carousel-track .carousel-item:hover {
+  background-color: white;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+.reviews .carousel-container .carousel-track .carousel-item .rating {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.reviews .carousel-container .carousel-track .carousel-item .rating .fa-solid {
+  color: #473E66;
+}
+.reviews .carousel-container .carousel-track .carousel-item .message p {
+  margin-bottom: 40px;
+  color: #06142E;
+  word-wrap: break-word;
+  line-height: 35px;
+}
+.reviews .carousel-container .carousel-track .carousel-item .client-info {
+  text-align: center;
+}
+.reviews .carousel-container .carousel-track .carousel-item .client-info h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.reviews .carousel-container .carousel-track .carousel-item .client-info p {
+  color: #BD83B8;
+  opacity: 0.7;
+  line-height: 30px;
+}
+
+@keyframes carousel-animation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 60% {
+    transform: translateX(-400px);
+  }
+  20%, 70% {
+    transform: translateX(-800px);
+  }
+  30%, 80% {
+    transform: translateX(-1200px);
+  }
+  40%, 90% {
+    transform: translateX(-1600px);
+  }
+  50%, 100% {
+    transform: translateX(-2000px);
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,7 @@ import Popular from "./components/Popular";
 import Support from "./components/Support";
 import Header from "./components/Header";
 import About from "./components/About";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Popular />
       <Support />
       <About />
+      <Reviews />
     </div>
   );
 }

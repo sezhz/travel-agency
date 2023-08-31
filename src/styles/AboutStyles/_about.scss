@@ -34,6 +34,7 @@
 
       img {
         width: 100%;
+        margin-left: 40px;
       }
     }
 
@@ -44,7 +45,7 @@
       padding-left: 15px;
 
       .about-text-side {
-        padding-left: 80px;
+        padding-left: 120px;
 
         .about-title {
           text-align: left;
@@ -57,7 +58,7 @@
             @media (max-width: 768px) {
               font-size: 120px;
               white-space: nowrap;
-              left: -120px;
+              left: -160px;
               position: relative;
             }
           }
@@ -91,9 +92,9 @@
 
               @media (max-width: 768px) {
                 text-align: start;
-                font-size: 50px;
+                font-size: 44px;
                 margin-bottom: 90px;
-                width: 1170px;
+                width: 1100px;
                 position: relative;
                 left: -380px;
               }
