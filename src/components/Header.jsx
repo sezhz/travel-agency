@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import wordMap from "../img/wordmap.png";
+import logo from "../img/logo.png";
 import Modal from "./Modal";
 
 const Header = () => {
@@ -29,11 +29,7 @@ const Header = () => {
     <div className="header">
       <div className="container">
         <div className="map-container">
-          <img src={wordMap} alt="map" />
-          <div className="map-text">
-            <h2>Exotic Skyline</h2>
-            <p>туристична агенцiя</p>
-          </div>
+          <img src={logo} alt="map" />
           <div className="navigation">
             <a href="#tour-select">Вибiр туру</a>
             <a href="#popular">Популярнi</a>

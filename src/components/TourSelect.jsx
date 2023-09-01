@@ -30,11 +30,17 @@ const TourSelect = () => {
                 <option value="Балі" className="custom-option">
                   Балі
                 </option>
-                <option value="Египет" className="custom-option">
+                <option value="Греція" className="custom-option">
+                  Греція
+                </option>
+                <option value="Єгипет" className="custom-option">
                   Єгипет
                 </option>
-                <option value="Ібіцу" className="custom-option">
+                <option value="Ібіца" className="custom-option">
                   Ібіца
+                </option>
+                <option value="Iндонезiя" className="custom-option">
+                  Iндонезiя
                 </option>
                 <option value="Карпати" className="custom-option">
                   Карпати
@@ -42,23 +48,26 @@ const TourSelect = () => {
                 <option value="Мальдіви" className="custom-option">
                   Мальдіви
                 </option>
+                <option value="Норвегiя" className="custom-option">
+                  Норвегiя
+                </option>
+                <option value="Палау" className="custom-option">
+                  Палау
+                </option>
                 <option value="Париж" className="custom-option">
                   Париж
+                </option>
+                <option value="Таїланд" className="custom-option">
+                  Таїланд
                 </option>
                 <option value="Турція" className="custom-option">
                   Турція
                 </option>
-                <option value="Греція" className="custom-option">
-                  Греція
-                </option>
-                <option value="Iндонезiя" className="custom-option">
-                  Iндонезiя
+                <option value="Україна" className="custom-option">
+                  Україна
                 </option>
                 <option value="Японiя" className="custom-option">
                   Японiя
-                </option>
-                <option value="Україна" className="custom-option">
-                  Україна
                 </option>
               </select>
 

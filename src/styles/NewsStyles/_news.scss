@@ -1,0 +1,136 @@
+@use "../global/boilerplate" as *;
+@use "../global/colors" as *;
+@use "../global/typography" as *;
+
+.news {
+  padding: 100px 0 70px;
+
+  @media (max-width: 768px) {
+    padding: 100px 0;
+    width: 1170px;
+  }
+
+  .container {
+    width: 1425px;
+    max-width: 100%;
+
+    @media (max-width: 768px) {
+      margin-left: 20px;
+    }
+
+    .news-header {
+      .news-title {
+        margin-bottom: 35px;
+
+        span {
+          color: $orange;
+          font-size: $span-size;
+          display: block;
+          margin-bottom: 10px;
+
+          @media (max-width: 768px) {
+            font-size: 60px;
+          }
+        }
+
+        h2 {
+          font-size: $h2-size;
+          color: $blue-medium;
+
+          @media (max-width: 768px) {
+            font-size: 100px;
+          }
+        }
+      }
+    }
+
+    .news-content {
+      margin-left: -15px;
+      margin-right: -15px;
+
+      .news-container {
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .news-item {
+          margin-bottom: 30px;
+
+          @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 80px;
+          }
+
+          .news-img {
+            max-width: 100%;
+
+            img {
+              max-width: 100%;
+              width: 450px;
+              height: 350px;
+
+              @media (max-width: 768px) {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+
+          .news-text {
+            padding-top: 20px;
+
+            @media (max-width: 768px) {
+              display: flex;
+              flex-direction: row;
+            }
+
+            h4 {
+              font-family: $text-font;
+              font-weight: 600;
+              opacity: 0.6;
+              position: relative;
+              padding-left: 0;
+              margin-bottom: 10px;
+              color: $pink;
+
+              @media (max-width: 768px) {
+                font-size: 35px;
+                margin-right: 50px;
+              }
+            }
+
+            h3 {
+              font-size: $span-size;
+              line-height: 25px;
+              margin-bottom: 20px;
+              margin-top: 15px;
+              color: $blue-dark;
+              cursor: pointer;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                color: $orange;
+              }
+
+              @media (max-width: 768px) {
+                font-size: 45px;
+                margin-right: 50px;
+              }
+            }
+
+            a {
+              color: #65b2f3;
+
+              @media (max-width: 768px) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

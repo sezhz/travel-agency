@@ -6,6 +6,7 @@ import Support from "./components/Support";
 import Header from "./components/Header";
 import About from "./components/About";
 import Reviews from "./components/Reviews";
+import News from "./components/News";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Support />
       <About />
       <Reviews />
+      <News />
     </div>
   );
 }
