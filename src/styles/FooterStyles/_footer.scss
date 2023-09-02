@@ -1,0 +1,199 @@
+@use "../global/boilerplate" as *;
+@use "../global/colors" as *;
+@use "../global/typography" as *;
+
+.footer {
+  background-color: $blue-dark;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  font-size: $p-size;
+
+  @media (max-width: 768px) {
+    width: 1200px;
+  }
+
+  .footer-upper {
+    opacity: 0.4;
+    padding: 40px 0 70px;
+
+    @media (max-width: 768px) {
+      padding:30px 0;
+    }
+
+    .footer-top {
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+      @media (max-width: 768px) {
+        padding-bottom: 0;
+      }
+
+      .container {
+        position: relative;
+        width: 1170px;
+
+        .top-cont {
+          margin-left: -15px;
+          margin-right: -15px;
+          display: flex;
+          flex-direction: row;
+
+          .top-textbox {
+            width: 50%;
+            float: left;
+            margin-bottom: 20px;
+
+            .top-title {
+              color: $peach;
+              font-size: $h2-size;
+              font-family: "Kalam", cursive;
+              text-transform: uppercase;
+
+              @media (max-width: 768px) {
+                font-size: 60px;
+              }
+            }
+            .top-text {
+              color: $peach;
+              font-size: $span-size;
+              opacity: 0.5;
+            }
+          }
+
+          .top-links {
+            width: 50%;
+            float: left;
+
+            ul {
+              display: flex;
+              justify-content: end;
+              list-style: none;
+
+              li {
+                position: relative;
+                margin-left: 30px;
+
+                a {
+                  i {
+                    color: white;
+                    font-size: 55px;
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                      color: $peach;
+                      font-size: 56px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-middle {
+      padding-top: 100px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      .container {
+        position: relative;
+        width: 1170px;
+
+        .middle-content {
+          margin-left: -15px;
+          margin-right: -15px;
+          display: flex;
+
+          .column {
+            width: 25%;
+            float: left;
+            position: relative;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .col-content {
+              .col-title {
+                margin-bottom: 25px;
+
+                h2 {
+                  font-size: $span-size;
+                  color: white;
+                  position: relative;
+                }
+              }
+              .col-text {
+                margin-top: 20px;
+
+                p {
+                  color: white;
+                  padding-bottom: 20px;
+                }
+
+                a {
+                  color: white;
+                }
+              }
+
+              input {
+                font-family: $titles-font;
+                background-color: transparent;
+                height: 50px;
+                font-size: $p-size;
+                color: white;
+                padding: 6px 20px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                box-shadow: none;
+
+                position: relative;
+              }
+
+              button {
+                font-family: $titles-font;
+                height: 50px;
+                color: $blue-dark;
+                padding: 6px 20px;
+                background: white;
+                position: relative;
+                width: 100%;
+                margin-top: 30px;
+                text-align: left;
+                border: none;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                i {
+                  font-size: 16px;
+                  padding-left: 45px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    position: relative;
+    background-color: $blue-dark;
+    color: $peach;
+    opacity: 0.35;
+    font-size: 10px;
+    padding: 10px 0;
+
+    @media (max-width: 768px) {
+      font-size: $p-size;
+    }
+
+    .container {
+      position: relative;
+      width: 1170px;
+    }
+  }
+}

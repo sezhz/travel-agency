@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Reviews from "./components/Reviews";
 import News from "./components/News";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Reviews />
       <News />
+      <Footer />
     </div>
   );
 }

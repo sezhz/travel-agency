@@ -568,7 +568,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 150px 0;
-  opacity: 0.9;
+  opacity: 1;
 }
 @media (max-width: 530px) {
   .support {
@@ -657,6 +657,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 .modal-overlay .modal {
   width: 600px;
@@ -1055,7 +1056,7 @@ body {
 }
 @media (max-width: 768px) {
   .about .about-container .info-container .about-text-side .about-text div {
-    width: 800px;
+    width: 400px;
   }
 }
 .about .about-container .info-container .about-text-side .about-text div span {
@@ -1293,4 +1294,177 @@ body {
   .news .container .news-content .news-container .news-item .news-text a {
     display: none;
   }
+}
+
+.footer {
+  background-color: #06142E;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .footer {
+    width: 1200px;
+  }
+}
+.footer .footer-upper {
+  opacity: 0.4;
+  padding: 40px 0 70px;
+}
+@media (max-width: 768px) {
+  .footer .footer-upper {
+    padding: 30px 0;
+  }
+}
+.footer .footer-upper .footer-top {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 768px) {
+  .footer .footer-upper .footer-top {
+    padding-bottom: 0;
+  }
+}
+.footer .footer-upper .footer-top .container {
+  position: relative;
+  width: 1170px;
+}
+.footer .footer-upper .footer-top .container .top-cont {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer-upper .footer-top .container .top-cont .top-textbox {
+  width: 50%;
+  float: left;
+  margin-bottom: 20px;
+}
+.footer .footer-upper .footer-top .container .top-cont .top-textbox .top-title {
+  color: #F5D7DB;
+  font-size: 50px;
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .footer .footer-upper .footer-top .container .top-cont .top-textbox .top-title {
+    font-size: 60px;
+  }
+}
+.footer .footer-upper .footer-top .container .top-cont .top-textbox .top-text {
+  color: #F5D7DB;
+  font-size: 25px;
+  opacity: 0.5;
+}
+.footer .footer-upper .footer-top .container .top-cont .top-links {
+  width: 50%;
+  float: left;
+}
+.footer .footer-upper .footer-top .container .top-cont .top-links ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+.footer .footer-upper .footer-top .container .top-cont .top-links ul li {
+  position: relative;
+  margin-left: 30px;
+}
+.footer .footer-upper .footer-top .container .top-cont .top-links ul li a i {
+  color: white;
+  font-size: 55px;
+  transition: all 0.4s ease-in-out;
+}
+.footer .footer-upper .footer-top .container .top-cont .top-links ul li a i:hover {
+  color: #F5D7DB;
+  font-size: 56px;
+}
+.footer .footer-upper .footer-middle {
+  padding-top: 100px;
+}
+@media (max-width: 768px) {
+  .footer .footer-upper .footer-middle {
+    display: none;
+  }
+}
+.footer .footer-upper .footer-middle .container {
+  position: relative;
+  width: 1170px;
+}
+.footer .footer-upper .footer-middle .container .middle-content {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column {
+  width: 25%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column .col-content .col-title {
+  margin-bottom: 25px;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column .col-content .col-title h2 {
+  font-size: 25px;
+  color: white;
+  position: relative;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column .col-content .col-text {
+  margin-top: 20px;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column .col-content .col-text p {
+  color: white;
+  padding-bottom: 20px;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column .col-content .col-text a {
+  color: white;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column .col-content input {
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  padding: 6px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+  position: relative;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column .col-content button {
+  font-family: "Nunito", sans-serif;
+  height: 50px;
+  color: #06142E;
+  padding: 6px 20px;
+  background: white;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.footer .footer-upper .footer-middle .container .middle-content .column .col-content button i {
+  font-size: 16px;
+  padding-left: 45px;
+}
+.footer .footer-bottom {
+  text-align: center;
+  position: relative;
+  background-color: #06142E;
+  color: #F5D7DB;
+  opacity: 0.35;
+  font-size: 10px;
+  padding: 10px 0;
+}
+@media (max-width: 768px) {
+  .footer .footer-bottom {
+    font-size: 18px;
+  }
+}
+.footer .footer-bottom .container {
+  position: relative;
+  width: 1170px;
 }/*# sourceMappingURL=styles.css.map */
