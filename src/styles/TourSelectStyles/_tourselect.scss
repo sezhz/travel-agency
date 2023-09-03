@@ -3,6 +3,9 @@
 @use "../global/typography" as *;
 
 .tour-select {
+  top: -80px;
+  position: relative;
+
   @media (max-width: 760px) {
     display: none;
   }
@@ -12,9 +15,7 @@
       justify-content: center;
 
       .tour-select-content {
-        position: relative;
         z-index: 2;
-        top: -80px;
         max-width: 1140px;
         width: 1140px;
         height: 160px;
@@ -54,7 +55,7 @@
             border: 0;
             text-transform: capitalize;
             display: block;
-            background: #F0F0F0;
+            background: #f0f0f0;
             display: inline-block;
             position: relative;
             overflow: hidden;

@@ -145,8 +145,8 @@ const Hero = () => {
                     fadeIn ? "fade-in" : ""
                   }`}
                 >
-                  <a href="/home" className="theme-btn">
-                    Детальніше
+                  <a href="#about" className="theme-btn">
+                    Детальніше про нас
                   </a>
                 </div>
               </div>

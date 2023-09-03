@@ -1,0 +1,50 @@
+@use "../global/boilerplate" as *;
+@use "../global/colors" as *;
+@use "../global/typography" as *;
+
+.country {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  margin-bottom: 80px;
+  padding-top: 23px;
+
+  .container {
+    width: 1170px;
+
+    .country-content {
+      width: 100%;
+
+      .country-photos__container {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+
+        .country-item__cont {
+          width: 33.33%;
+          margin-right: 15px;
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+          overflow: hidden;
+
+          .country-photo__item {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      h2 {
+        text-align: center;
+        font-size: $h2-size;
+        color: $blue-dark;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-family: $text-font;
+        line-height: 40px;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

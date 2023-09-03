@@ -29,7 +29,9 @@ const Header = () => {
     <div className="header">
       <div className="container">
         <div className="map-container">
-          <img src={logo} alt="map" />
+          <a href="/">
+            <img src={logo} alt="map" />
+          </a>
           <div className="navigation">
             <a href="#tour-select">Вибiр туру</a>
             <a href="#popular">Популярнi</a>

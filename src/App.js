@@ -1,4 +1,4 @@
-import { Route, Routes, Navigation } from "react-router-dom";
+import { Routes, Route, Link, useParams } from "react-router-dom";
 import Hero from "./components/Hero";
 import TourSelect from "./components/TourSelect";
 import Popular from "./components/Popular";
@@ -8,11 +8,25 @@ import About from "./components/About";
 import Reviews from "./components/Reviews";
 import News from "./components/News";
 import Footer from "./components/Footer";
+import Country from "./components/Country";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
+      <Routes>
+        <Route path="/" element={<AllComponents />} />
+
+        <Route path="/country/:id" element={<Country />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
+
+function AllComponents() {
+  return (
+    <>
       <Hero />
       <TourSelect />
       <Popular />
@@ -20,9 +34,9 @@ function App() {
       <About />
       <Reviews />
       <News />
-      <Footer />
-    </div>
+    </>
   );
 }
+
 
 export default App;

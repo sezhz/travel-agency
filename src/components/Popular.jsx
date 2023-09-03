@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import countriesData from "./countries";
 
 const Popular = () => {
@@ -22,6 +23,13 @@ const Popular = () => {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   return (
     <div id="popular" className="popular">
       <div className="popular-section">
@@ -42,7 +50,7 @@ const Popular = () => {
                         }`}
                         key={index}
                       >
-                        <a href="/">
+                        <Link to={`/country/${country.id}`} onClick={scrollToTop}>
                           <img
                             className="country-flag"
                             src={country.flag}
@@ -51,7 +59,7 @@ const Popular = () => {
                           <img src={country.image} alt={country.name} />
                           <div className="country-name">{country.name}</div>
                           <div className="country-price">{country.price} ₴</div>
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
