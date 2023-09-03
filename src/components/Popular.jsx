@@ -27,15 +27,15 @@ const Popular = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    })
-  }
+    });
+  };
 
   return (
     <div id="popular" className="popular">
       <div className="popular-section">
         <div className="container">
           <div className="popular-title">
-            <span>Рекомендуємо</span>
+            <span>Тури</span>
             <h2>Популярні країни</h2>
           </div>
           <div className="gallery">
@@ -50,7 +50,10 @@ const Popular = () => {
                         }`}
                         key={index}
                       >
-                        <Link to={`/country/${country.id}`} onClick={scrollToTop}>
+                        <Link
+                          to={`/country/${country.id}`}
+                          onClick={scrollToTop}
+                        >
                           <img
                             className="country-flag"
                             src={country.flag}
@@ -58,7 +61,9 @@ const Popular = () => {
                           />
                           <img src={country.image} alt={country.name} />
                           <div className="country-name">{country.name}</div>
-                          <div className="country-price">{country.price} ₴</div>
+                          <div className="country-price">
+                            ~{country.price} ₴
+                          </div>
                         </Link>
                       </li>
                     ))}

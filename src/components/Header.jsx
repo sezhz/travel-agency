@@ -33,8 +33,7 @@ const Header = () => {
             <img src={logo} alt="map" />
           </a>
           <div className="navigation">
-            <a href="#tour-select">Вибiр туру</a>
-            <a href="#popular">Популярнi</a>
+            <a href="#popular">Тури</a>
             <a href="#support">Пiдтримка</a>
             <a href="#about">Про нас</a>
           </div>

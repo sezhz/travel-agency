@@ -52,11 +52,12 @@
         text-align: center;
         font-size: $h2-size;
         color: $blue-dark;
+        text-transform: uppercase;
         margin-bottom: 30px;
 
         @media (max-width: 768px) {
           font-size: 80px;
-          margin-bottom: 10px;   
+          margin-bottom: 10px;
         }
       }
 
@@ -67,11 +68,138 @@
         margin-bottom: 15px;
 
         @media (max-width: 768px) {
-          padding: 0 50px;   
+          padding: 0 50px;
           font-size: 40px;
           line-height: 50px;
           margin-bottom: 40px;
         }
+      }
+    }
+
+    .order {
+      margin-top: 40px;
+      background-color: $peach;
+      border: 1px solid $blue-medium;
+
+      @media (max-width: 768px) {
+        margin-top: 100px;
+      }
+
+      .order-header {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+
+        .order-title {
+          text-align: center;
+          font-size: $h2-size;
+          color: $orange;
+          margin-bottom: 20px;
+          border-bottom: 3px solid $orange;
+        }
+
+        .order-text {
+          text-align: start;
+          font-size: $p-size;
+          color: $blue-dark;
+          line-height: 35px;
+
+          p {
+            margin-bottom: 18px;
+
+            @media (max-width: 768px) {
+              font-size: 50px;
+              margin-bottom: 60px;
+              line-height: 55px;
+            }
+          }
+        }
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          input,
+          textarea {
+            padding: 10px;
+            font-size: $span-size;
+            font-family: $text-font;
+            height: 55px;
+            width: 50%;
+            margin-bottom: 30px;
+
+            @media (max-width: 768px) {
+              height: 100px;
+              font-size: 50px;
+              margin-bottom: 10px;
+              width: 80%;
+            }
+          }
+          textarea {
+            height: 150px;
+
+            @media (max-width: 768px) {
+              height: 290px;
+            }
+          }
+
+          label {
+            text-align: center;
+            font-size: $span-size;
+
+            @media (max-width: 768px) {
+              font-size: 40px !important;
+            }
+          }
+
+          button {
+            color: $pink;
+            font-weight: 600;
+            padding: 15px 27px;
+            background: white;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            border: 1px solid rgba(71, 62, 102, 0.3);
+            cursor: pointer;
+            margin-bottom: 30px;
+
+            @media (max-width: 768px) {
+              font-size: 40px;
+              margin-top: 100px;
+            }
+
+            &:hover {
+              background: $pink;
+              color: white;
+              animation: changeColor 1s ease-in-out;
+            }
+          }
+        }
+      }
+
+      .notify {
+        padding: 10px;
+        border-top: 1px solid $blue-dark;
+        text-align: center;
+        font-size: $h2-size;
+        color: $blue-dark;
       }
     }
   }

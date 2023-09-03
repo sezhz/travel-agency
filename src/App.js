@@ -1,6 +1,5 @@
 import { Routes, Route, Link, useParams } from "react-router-dom";
 import Hero from "./components/Hero";
-import TourSelect from "./components/TourSelect";
 import Popular from "./components/Popular";
 import Support from "./components/Support";
 import Header from "./components/Header";
@@ -28,7 +27,6 @@ function AllComponents() {
   return (
     <>
       <Hero />
-      <TourSelect />
       <Popular />
       <Support />
       <About />
