@@ -19,16 +19,19 @@ const News = () => {
                 date="28.05.2023"
                 title="ТУРИСТИЧНИЙ СЕЗОН ЛІТО!"
                 imageSrc={summerSeason}
+                linkTo="/summer"
               />
               <NewsItem
                 date="05.03.2023"
                 title="ДЯКУЄМО, ЩО ВИ З НАМИ!"
                 imageSrc={thankyou}
+                linkTo="/spring"
               />
               <NewsItem
                 date="06.31.2022"
                 title="ТУРИСТИЧНИЙ СЕЗОН ЗИМА 2023"
                 imageSrc={winterSeason}
+                linkTo="/winter"
               />
             </div>
           </div>

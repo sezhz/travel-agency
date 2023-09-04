@@ -752,6 +752,12 @@ body {
   margin-right: 30px;
   padding: 5px;
 }
+@media (max-width: 768px) {
+  .header .map-container img {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+}
 .header .map-container .icons {
   margin-left: 15%;
   display: flex;
@@ -786,7 +792,7 @@ body {
 }
 @media (max-width: 768px) {
   .header .map-container .navigation a {
-    font-size: 25px;
+    font-size: 40px;
   }
 }
 .header .map-container .navigation a:hover {
@@ -1178,11 +1184,6 @@ body {
   margin-bottom: 20px;
   margin-top: 15px;
   color: #06142E;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-.news .container .news-content .news-container .news-item .news-text h3:hover {
-  color: #F1916D;
 }
 @media (max-width: 768px) {
   .news .container .news-content .news-container .news-item .news-text h3 {
@@ -1192,10 +1193,13 @@ body {
 }
 .news .container .news-content .news-container .news-item .news-text a {
   color: #65b2f3;
+  font-size: 25px;
 }
 @media (max-width: 768px) {
   .news .container .news-content .news-container .news-item .news-text a {
-    display: none;
+    font-size: 40px;
+    position: relative;
+    top: -5px;
   }
 }
 
@@ -1578,4 +1582,47 @@ body {
   text-align: center;
   font-size: 50px;
   color: #06142E;
+}
+
+.news-page {
+  background-color: #f0f0f0;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .news-page {
+    width: 1160px;
+  }
+}
+.news-page .container {
+  width: 1170px;
+}
+@media (max-width: 768px) {
+  .news-page .container {
+    width: 1150px;
+  }
+}
+.news-page .container .news-page__content {
+  margin-top: 60px;
+}
+.news-page .container .news-page__content h2 {
+  font-size: 50px;
+  color: #06142E;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .news-page .container .news-page__content h2 {
+    font-size: 80px;
+  }
+}
+.news-page .container .news-page__content p {
+  font-size: 25px;
+  margin-bottom: 30px;
+  line-height: 50px;
+}
+@media (max-width: 768px) {
+  .news-page .container .news-page__content p {
+    font-size: 50px;
+    line-height: 70px;
+  }
 }/*# sourceMappingURL=styles.css.map */

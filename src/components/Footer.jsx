@@ -25,22 +25,22 @@ const Footer = () => {
               <div className="top-links">
                 <ul>
                   <li>
-                    <a href="/">
+                    <a href="https://www.facebook.com/profile.php?id=61550889993463" target="_blank" rel="noreferrer">
                       <i class="fa-brands fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="/">
+                    <a href="https://t.me/sezhzq" target="_blank" rel="noreferrer">
                       <i class="fa-brands fa-telegram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="/">
+                    <a href="https://discord.gg/RyZ7YbA8h3" target="_blank" rel="noreferrer">
                       <i class="fa-brands fa-discord"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="/">
+                    <a href="https://www.instagram.com/sezhz/" target="_blank" rel="noreferrer">
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
@@ -72,10 +72,7 @@ const Footer = () => {
                   </div>
                   <div className="col-text">
                     <p>
-                      <a href="#tour-select">Вибiр туру</a>
-                    </p>
-                    <p>
-                      <a href="#popular">Популярнi</a>
+                      <a href="#popular">Тури</a>
                     </p>
                     <p>
                       <a href="#support">Пiдтримка</a>
@@ -111,7 +108,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="container">
-        <h2>© 2023 Exotic Skyline</h2>
+          <h2>© 2023 Exotic Skyline</h2>
         </div>
       </div>
     </div>
