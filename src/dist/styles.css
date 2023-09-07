@@ -1187,8 +1187,9 @@ body {
 }
 @media (max-width: 768px) {
   .news .container .news-content .news-container .news-item .news-text h3 {
-    font-size: 45px;
+    font-size: 40px;
     margin-right: 50px;
+    line-height: 37px;
   }
 }
 .news .container .news-content .news-container .news-item .news-text a {
